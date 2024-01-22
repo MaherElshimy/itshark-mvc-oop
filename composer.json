@@ -1,0 +1,22 @@
+{
+    "name": "itshark/mvc",
+    "description": "mvc",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Itshark\\Mvc\\": "src/"
+        },
+
+        "files": ["src/core/helper.php"]
+    },
+    "authors": [
+        {
+            "name": "Maher Elshimy",
+            "email": "maher.elshimy22@gmail.com"
+        }
+    ],
+    "require": {
+        "itrax/db-wrapper": "^1.0"
+    }
+}
