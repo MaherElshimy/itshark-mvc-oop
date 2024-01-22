@@ -17,8 +17,8 @@ class bootstrap
     private function url() {
         $query_string = $_SERVER['QUERY_STRING'];
         $url_list = explode("/" , $query_string) ;
-        $this->controller  = $url_list[0];
-        $this->method = $url_list[1];
+        $this->controller  = (empty($url_list[0]))? 'home' : $url_list[0] ;
+        $this->method = (empty($url_list[1]))? 'index' : $url_list[1] ;
         unset($url_list[0]  , $url_list[1]);
         $this->params = $url_list;
     }

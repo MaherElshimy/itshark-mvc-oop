@@ -4,7 +4,7 @@ namespace Itshark\Mvc\controllers;
 use Itshark\Mvc\models\users;
 
 
-class home{
+class home extends Controller{
 
     public function index() {
         $user = new users();

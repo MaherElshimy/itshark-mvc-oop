@@ -9,8 +9,13 @@ use Itrax\DbWrapper\dbwrapper;
 class users extends dbwrapper
 {
     public function getAllUser(){
-        return $this->select("users","*")->getAll();
+        return $this->select("users","*")->get();
     }
+
+    public function addNewUser($data){
+        return $this->insert("users",$data)->execute();
+    }
+
 }
 
 ?>
